@@ -1,0 +1,12 @@
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\bin\Debug\MotorVehiclesLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\bin\Debug\MotorVehiclesLibrary.pdb
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.csprojAssemblyReference.cache
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.csproj.CoreCompileInputs.cache
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\MotorVehiclesLibrary\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.pdb
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.csprojAssemblyReference.cache
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.csproj.CoreCompileInputs.cache
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.pdb
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\MotorVehiclesLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\MotorVehiclesLibrary.pdb

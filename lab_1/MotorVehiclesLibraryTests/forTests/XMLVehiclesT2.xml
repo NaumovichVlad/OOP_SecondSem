@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vehicles>
+  <MotorVehicle>
+    <article>3424324543452</article>
+    <name>LF200</namhe>
+    <power>13,7</power>
+    <capacity>197</capacity>
+    <price>5400</price>
+    <manufacturer>Lifan</manufacturer>
+  </MotorVehicle>
+  <MotorVehicle>
+    <name>WRX300</name>
+    <power>31,0</power>
+    <capacity>300</capacity>
+    <price>6899</price>
+    <manufacturer>Motoland</manufacturer>
+  </MotorVehicle>
+  <MotorVehicle>
+    <article>3424324234221</article>
+    <name>LF150</name>
+    <power>12,6</power>
+    <price>4499</price>
+    <manufacturer>Lifan</manufacturer>
+  </MotorVehicle>
+  <MotorVehicle>
+    <article>3424433343332</article>
+    <name>XR250</name>
+    <power>22,4</power>
+    <capacity>250</capacity>
+    <price>7689</price>
+    <manucturer>Motoland</manufacturer>
+  </MotorVehicle>
+  <MotorVehicle>
+    <article>3424536754873</article>
+    <name>Voge300RR</name>
+    <power>29,1</power>
+    <capacity>292</capacity>
+    <price>13975</price>
+    <manufacturer>Loncin</manufacturer>
+  </MotorVehicle>
+</vehicles>
