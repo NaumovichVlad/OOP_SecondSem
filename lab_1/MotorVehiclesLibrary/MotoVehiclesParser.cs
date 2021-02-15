@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Schema;
+using ExceptionLibrary;
 
 namespace MotorVehiclesLibrary
 {
@@ -93,15 +94,9 @@ namespace MotorVehiclesLibrary
         }
         static void xmlSettingsValidationEventHandler(object sender, ValidationEventArgs e)
         {
-            if (e.Severity == XmlSeverityType.Warning)
+            if (e.Severity == XmlSeverityType.Warning && e.Severity == XmlSeverityType.Error)
             {
-                Console.Write("WARNING: ");
-                Console.WriteLine(e.Message);
-            }
-            else if (e.Severity == XmlSeverityType.Error)
-            {
-                Console.Write("ERROR: ");
-                Console.WriteLine(e.Message);
+                throw new InvalidXMLFileException();
             }
         }
     }
