@@ -2,6 +2,7 @@
 using MotorVehiclesLibrary;
 using System;
 using System.Collections.Generic;
+using ExceptionLibrary;
 
 namespace MotorVehiclesLibraryTests
 {
@@ -39,7 +40,7 @@ namespace MotorVehiclesLibraryTests
             {
                 parser.ReadXML();
             }
-            catch (Exception e)
+            catch (InvalidXMLFileException e)
             {
                 actual = e.ToString();
             }

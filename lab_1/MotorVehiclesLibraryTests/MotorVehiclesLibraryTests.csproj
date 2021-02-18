@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExceptionLibrary\ExceptionLibrary.csproj">
+      <Project>{fc9feff4-776c-48b6-96a0-212e834c9537}</Project>
+      <Name>ExceptionLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MotorVehiclesLibrary\MotorVehiclesLibrary.csproj">
       <Project>{e541f8cd-8686-4d26-bb55-4578e4d309d5}</Project>
       <Name>MotorVehiclesLibrary</Name>

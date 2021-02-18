@@ -26,7 +26,15 @@ namespace MotorVehiclesLibrary
             XmlReaderSettings xmlSettings = new XmlReaderSettings();
             xmlSettings.Schemas.Add(null, fileXMLSchemaPath);
             xmlSettings.ValidationType = ValidationType.Schema;
-            xmlSettings.ValidationEventHandler += new ValidationEventHandler(xmlSettingsValidationEventHandler);
+            try
+            {
+                xmlSettings.ValidationEventHandler += new ValidationEventHandler(XmlSettingsValidationEventHandler);
+                
+            }
+            catch(InvalidXMLFileException e)
+            {
+                return null;
+            }
             XmlReader xr = XmlReader.Create(fileXMLPath, xmlSettings);
             string element = string.Empty;
             string[] propertys = new string[6];
@@ -74,7 +82,7 @@ namespace MotorVehiclesLibrary
             return vehicles;
         }
 
-        public void WriteXML()
+        public void WriteXML(List<MotorVehicle> vehicles)
         {
 
         }
@@ -92,12 +100,10 @@ namespace MotorVehiclesLibrary
             propertys = null;
             return vehicle;
         }
-        static void xmlSettingsValidationEventHandler(object sender, ValidationEventArgs e)
+        private void XmlSettingsValidationEventHandler(object sender, ValidationEventArgs e)
         {
-            if (e.Severity == XmlSeverityType.Warning && e.Severity == XmlSeverityType.Error)
-            {
+            if (e.Severity == XmlSeverityType.Warning || e.Severity == XmlSeverityType.Error)
                 throw new InvalidXMLFileException();
-            }
         }
     }
 }
