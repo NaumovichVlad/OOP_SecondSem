@@ -8,7 +8,7 @@
             <xs:sequence>
               <xs:element name="article" type="xs:string" minOccurs="1"/>
               <xs:element name="name" type="xs:string" minOccurs="1" />
-              <xs:element name="power" type="xs:double" minOccurs="1" />
+              <xs:element name="power" type="xs:string" minOccurs="1" />
               <xs:element name="capacity" type="xs:int" minOccurs="1" />
               <xs:element name="price" type="xs:int" minOccurs="1" />
               <xs:element name="manufacturer" type="xs:string" minOccurs="1" />

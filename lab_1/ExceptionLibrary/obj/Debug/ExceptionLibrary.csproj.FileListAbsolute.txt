@@ -1,6 +1,5 @@
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\bin\Debug\ExceptionLibrary.dll
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\bin\Debug\ExceptionLibrary.pdb
-E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\obj\Debug\ExceptionLibrary.csprojAssemblyReference.cache
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\obj\Debug\ExceptionLibrary.csproj.CoreCompileInputs.cache
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\obj\Debug\ExceptionLibrary.dll
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\ExceptionLibrary\obj\Debug\ExceptionLibrary.pdb
