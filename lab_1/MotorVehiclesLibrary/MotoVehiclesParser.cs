@@ -9,35 +9,52 @@ using ExceptionLibrary;
 
 namespace MotorVehiclesLibrary
 {
+    enum Propertys
+    {
+        article,
+        name,
+        power,
+        capacity,
+        price,
+        manufacturer
+    }
     public class MotoVehiclesParser
     {
         private string fileXMLPath;
         private string fileXMLSchemaPath;
+        private List<MotorVehicle> vehicles = new List<MotorVehicle>();
+
+        public int Count { get { return vehicles.Count; } }
 
         public MotoVehiclesParser(string fileXMLPath, string fileXMLSchemaPath)
         {
             this.fileXMLPath = fileXMLPath;
             this.fileXMLSchemaPath = fileXMLSchemaPath;
+            ReadXML();
         }
 
-        public List<MotorVehicle> ReadXML()
+        public MotorVehicle this[int index]
         {
-            List<MotorVehicle> vehicles = new List<MotorVehicle>();
+            get
+            {
+                return vehicles[index];
+            }
+            set
+            {
+                vehicles[index] = value;
+            }
+        }
+
+        private void ReadXML()
+        {
             XmlReaderSettings xmlSettings = new XmlReaderSettings();
             xmlSettings.Schemas.Add(null, fileXMLSchemaPath);
             xmlSettings.ValidationType = ValidationType.Schema;
-            try
-            {
-                xmlSettings.ValidationEventHandler += new ValidationEventHandler(XmlSettingsValidationEventHandler);
-                
-            }
-            catch(InvalidXMLFileException e)
-            {
-                return null;
-            }
+            xmlSettings.ValidationEventHandler += new ValidationEventHandler(XmlSettingsValidationEventHandler);
             XmlReader xr = XmlReader.Create(fileXMLPath, xmlSettings);
             string element = string.Empty;
-            string[] propertys = new string[6];
+            var attributes = Enum.GetNames(typeof(Propertys));
+            string[] propertys = new string[attributes.Length];
             while (xr.Read())
             {
                 if (xr.NodeType == XmlNodeType.Element)
@@ -48,27 +65,12 @@ namespace MotorVehiclesLibrary
                 {
                     if (xr.NodeType == XmlNodeType.Text)
                     {
-                        switch (element)
-                        {
-                            case "article":
-                                propertys[0] = xr.Value;
+                        for (var i = 0; i < attributes.Length; i++)
+                            if (attributes[i] == element)
+                            {
+                                propertys[i] = xr.Value;
                                 break;
-                            case "name":
-                                propertys[1] = xr.Value;
-                                break;
-                            case "power":
-                                propertys[2] = xr.Value;
-                                break;
-                            case "capacity":
-                                propertys[3] = xr.Value;
-                                break;
-                            case "price":
-                                propertys[4] = xr.Value;
-                                break;
-                            case "manufacturer":
-                                propertys[5] = xr.Value;
-                                break;
-                        }
+                            }
                     }
                     else
                     {
@@ -79,12 +81,33 @@ namespace MotorVehiclesLibrary
                     }
                 }
             }
-            return vehicles;
         }
 
-        public void WriteXML(List<MotorVehicle> vehicles)
+        public void WriteXML(string path)
         {
-
+            var attributes = Enum.GetNames(typeof(Propertys));
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            XmlWriter newXmlFile = XmlWriter.Create(path, settings);
+            newXmlFile.WriteStartDocument();
+            newXmlFile.WriteStartElement("vehicles");
+            foreach(MotorVehicle vehicle in vehicles)
+            {
+                string[] propertys = vehicle.ToString().Split(' ');
+                newXmlFile.WriteStartElement("MotorVehicle");
+                var i = 0;
+                foreach (string property in propertys)
+                {
+                    newXmlFile.WriteStartElement(attributes[i]);
+                    newXmlFile.WriteString(property);
+                    newXmlFile.WriteEndElement();
+                    i++;
+                }
+                newXmlFile.WriteEndElement();
+            }
+            newXmlFile.WriteEndElement();
+            newXmlFile.WriteEndDocument();
+            newXmlFile.Dispose();
         }
 
         public MotorVehicle CreateVehicle(string[] propertys)

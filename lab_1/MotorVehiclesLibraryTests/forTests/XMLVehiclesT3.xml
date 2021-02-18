@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <vehicles>
   <MotorVehicle>
     <article>3424324543452</article>
-    <namhe>LF200</namhe>
-    <powehe>13,7</power>
+    <name>LF200</name>
+    <power>13,7</power>
     <capacity>197</capacity>
     <price>5400</price>
     <manufacturer>Lifan</manufacturer>
   </MotorVehicle>
   <MotorVehicle>
+    <article>3424433453453</article>
     <name>WRX300</name>
-    <power>31,0</power>
+    <power>31</power>
     <capacity>300</capacity>
     <price>6899</price>
     <manufacturer>Motoland</manufacturer>
@@ -19,6 +20,7 @@
     <article>3424324234221</article>
     <name>LF150</name>
     <power>12,6</power>
+    <capacity>158</capacity>
     <price>4499</price>
     <manufacturer>Lifan</manufacturer>
   </MotorVehicle>
@@ -28,7 +30,7 @@
     <power>22,4</power>
     <capacity>250</capacity>
     <price>7689</price>
-    <manucturer>Motoland</manufacturer>
+    <manufacturer>Motoland</manufacturer>
   </MotorVehicle>
   <MotorVehicle>
     <article>3424536754873</article>
