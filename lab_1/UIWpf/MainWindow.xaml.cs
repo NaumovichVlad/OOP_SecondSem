@@ -80,6 +80,10 @@ namespace UIWpf
             {
                 ErrorMessage("Invalid directory");
             }
+            catch (FileNotFoundException)
+            {
+                ErrorMessage("File not found");
+            }
         }
 
         private void ExitButton(object sender, RoutedEventArgs e)

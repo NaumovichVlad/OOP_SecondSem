@@ -13,3 +13,4 @@ E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\MotorV
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\ExceptionLibrary.dll
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\ExceptionLibrary.pdb
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\obj\Debug\MotorVehiclesLibrary.csproj.CopyComplete
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibrary\bin\Debug\MotorVehiclesLibrary.xml

@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MotorVehiclesLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:MotorVehiclesLibrary.MotorVehicle">
+            <summary>
+            Class for storing information about motorcycles
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.ArticleNumber">
+            <summary>
+            Article
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.Name">
+            <summary>
+            Type of motorcycle
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.EnginePower">
+            <summary>
+            Engine power in double
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.EngineCapacity">
+            <summary>
+            Engine capacity in int
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.Price">
+            <summary>
+            Motorcycle price
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotorVehicle.Manufacturer">
+            <summary>
+            The manufacturer of the motorcycle
+            </summary>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotorVehicle.#ctor(System.String,System.String,System.Double,System.Int32,System.Int32,System.String)">
+            <summary>
+            Filling in properties
+            </summary>
+            <param name="articleNumber">Article</param>
+            <param name="name">Type of motorcycle</param>
+            <param name="enginePower">Engine power in double</param>
+            <param name="engineCapacity">Motorcycle price</param>
+            <param name="price">The manufacturer of the motorcycle</param>
+            <param name="manufacturer">The manufacturer of the motorcycle</param>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotorVehicle.ToString">
+            <summary>
+            Output of all information
+            </summary>
+            <returns>All properties</returns>
+        </member>
+        <member name="T:MotorVehiclesLibrary.Properties">
+            <summary>
+            MotorVehicle properties names
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.article">
+            <summary>
+            Article
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.name">
+            <summary>
+            Type of motorcycle
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.power">
+            <summary>
+            Engine power in double
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.capacity">
+            <summary>
+            Engine capacity in int
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.price">
+            <summary>
+            Motorcycle price
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.Properties.manufacturer">
+            <summary>
+            The manufacturer of the motorcycle
+            </summary>
+        </member>
+        <member name="T:MotorVehiclesLibrary.ClassProperties">
+            <summary>
+            MotorVehicle properties
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.ArticleNumber">
+            <summary>
+            Article
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.Name">
+            <summary>
+            Type of motorcycle
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.EnginePower">
+            <summary>
+            Engine power in double
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.EngineCapacity">
+            <summary>
+            Engine capacity in int
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.Price">
+            <summary>
+            Motorcycle price
+            </summary>
+        </member>
+        <member name="F:MotorVehiclesLibrary.ClassProperties.Manufacturer">
+            <summary>
+            The manufacturer of the motorcycle
+            </summary>
+        </member>
+        <member name="T:MotorVehiclesLibrary.MotoVehiclesParser">
+            <summary>
+            Read and write xml
+            </summary>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotoVehiclesParser.Count">
+            <summary>
+            The amount of equipment read from the file
+            </summary>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotoVehiclesParser.#ctor(System.String,System.String)">
+            <summary>
+            Automatic reading from a file
+            </summary>
+            <param name="fileXMLPath">Path to the xml file</param>
+            <param name="fileXMLSchemaPath">Path to the xsd file</param>
+        </member>
+        <member name="P:MotorVehiclesLibrary.MotoVehiclesParser.Item(System.Int32)">
+            <summary>
+            Access to the read information
+            </summary>
+            <param name="index">Index</param>
+            <returns>Information on the index</returns>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotoVehiclesParser.WriteXML(System.String)">
+            <summary>
+            Writing data to an xml file
+            </summary>
+            <param name="path">Path to the xml file</param>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotoVehiclesParser.CreateVehicle(System.String[])">
+            <summary>
+            Creating a class with a technique
+            </summary>
+            <param name="properties">vehicle parameters</param>
+        </member>
+        <member name="M:MotorVehiclesLibrary.MotoVehiclesParser.Remove(System.Int32)">
+            <summary>
+            The removal of the equipment by index
+            </summary>
+            <param name="index">The index to remove</param>
+        </member>
+    </members>
+</doc>

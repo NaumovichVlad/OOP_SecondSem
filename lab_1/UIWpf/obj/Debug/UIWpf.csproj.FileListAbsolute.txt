@@ -20,3 +20,4 @@ E:\Учёбка\GitHub\OOP_SecondSem\lab_1\UIWpf\bin\Debug\MotorVehiclesLibrary.
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\UIWpf\obj\Debug\UIWpf.csproj.CopyComplete
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\UIWpf\obj\Debug\EditingWindow.g.cs
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\UIWpf\obj\Debug\EditingWindow.baml
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\UIWpf\bin\Debug\MotorVehiclesLibrary.xml

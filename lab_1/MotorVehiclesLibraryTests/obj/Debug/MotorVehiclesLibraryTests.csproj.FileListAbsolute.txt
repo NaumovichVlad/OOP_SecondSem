@@ -38,3 +38,4 @@ E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibraryTests\obj\Debug\M
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibraryTests\obj\Debug\MotorVehiclesLibraryTests.csprojAssemblyReference.cache
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibraryTests\bin\Debug\ExceptionLibrary.dll
 E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibraryTests\bin\Debug\ExceptionLibrary.pdb
+E:\Учёбка\GitHub\OOP_SecondSem\lab_1\MotorVehiclesLibraryTests\bin\Debug\MotorVehiclesLibrary.xml
