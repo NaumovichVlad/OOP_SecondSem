@@ -1,0 +1,16 @@
+﻿<Window x:Class="SomeUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SomeUI"
+        mc:Ignorable="d"
+        Title="Наумович ИТП-22" Height="258" Width="280.8">
+    <Grid>
+        <Label Content="Введите строку:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,47,0,0" Height="26" Width="98"/>
+        <Label Content="Запись строки в файл" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,10,0,0" FontSize="20"/>
+        <TextBox Name="mainTextBox"  HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Margin="36,78,0,0" RenderTransformOrigin="0.463,0.748"/>
+        <Button Name="WriteBtn" Content="Записать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="36,172,0,0" Click="Button_Click"/>
+
+    </Grid>
+</Window>

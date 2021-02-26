@@ -1,0 +1,6 @@
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\bin\Debug\StreamEditorLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\bin\Debug\StreamEditorLibrary.pdb
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\obj\Debug\StreamEditorLibrary.csprojAssemblyReference.cache
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\obj\Debug\StreamEditorLibrary.csproj.CoreCompileInputs.cache
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\obj\Debug\StreamEditorLibrary.dll
+E:\Учёбка\GitHub\OOP_SecondSem\lab_2\StreamEditorLibrary\obj\Debug\StreamEditorLibrary.pdb
