@@ -43,21 +43,24 @@ namespace SomeUI
                 msDecorator.Seek(0, SeekOrigin.Begin);
                 msDecorator.Read(newByteLine, 0, newByteLine.Length);
                 efficiencys[2] = msDecorator.ComputeEfficiency();
-                msDecorator.Close();
             }
 
-            using (var bfStream = new StreamDecorator(new BufferedStream(File.OpenWrite("noteBS.bin"))))
-            {
-                bfStream.Write(newByteLine, 0, newByteLine.Length);
-                efficiencys[0] = bfStream.ComputeEfficiency();
-                bfStream.Close();
+            using (var file = File.OpenWrite("noteBS.bin")) {
+                using (var bfStream = new StreamDecorator(new BufferedStream(file)))
+                {
+                    bfStream.Write(newByteLine, 0, newByteLine.Length);
+                    efficiencys[0] = bfStream.ComputeEfficiency();
+                }
             }
-            using (var fsStream = new StreamDecorator(new FileStream("noteFS.bin", (FileMode)FileAccess.Write)))
-            {
-                fsStream.Write(newByteLine, 0, newByteLine.Length);
-                efficiencys[1] = fsStream.ComputeEfficiency();
-                fsStream.Close();
+
+            using (var filest = new FileStream("noteFS.bin", (FileMode)FileAccess.Write)) {
+                using (var fsStream = new StreamDecorator(filest))
+                {
+                    fsStream.Write(newByteLine, 0, newByteLine.Length);
+                    efficiencys[1] = fsStream.ComputeEfficiency();
+                }
             }
+
             return efficiencys;
         }
     }
